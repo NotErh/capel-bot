@@ -97,3 +97,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# discord tokens
+token*
+
+# private file
+./docs/useful_commands
