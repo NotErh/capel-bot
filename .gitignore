@@ -101,5 +101,8 @@ ENV/
 # discord tokens
 token*
 
+# saved data
+/stats.p
+
 # private file
-./docs/useful_commands
+/docs/useful_commands

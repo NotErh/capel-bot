@@ -1,0 +1,35 @@
+ps aux | grep python3
+
+0.1.8
+    Cleaned up code
+    Updated help message
+
+0.1.7.1
+    MADE IT SO YOU CAN'T TRANSLATE THE SAME ITEM MORE THAN ONCE
+
+0.1.7
+    Capel-bot will return plaintext when it is directly DM'ed for easy copy-pasting on mobile.
+    Remove :mag: and :mag_right: interactions in DM's (obsolete)
+    Added persistant stat tracking (look out for a headpat counter in the future!)
+    Added argument to set the rot_count
+    Added rudimentary Google Translate support (react with :sushi: or :hamburger:)
+    Reorganized code
+
+0.1.6
+    Added functionality: [in a regular text channel] react with :mag_right: to get a copy-paste friendly rot13 (instead of the pretty quote box)
+    Added functionality: [in a private message with Capel] react with :mag: or :mag_right: to a pretty quote box to receive a copy-paste friendly version
+
+0.1.5
+    Fixed crash that could happen if someone reacted with :mag: in a DMChannel
+    Added functionality for using embeds for quotes
+    Removed old library dependencies
+    Spring cleaning
+
+0.1.4
+    Removed logging
+    Implemented debug flag (-d or --debug)
+    Implemented rot13 counter
+    Cleaned up old emoji code
+    Increased cached message capacity from 5k to 20k
+    Added help message
+
