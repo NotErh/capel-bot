@@ -48,7 +48,7 @@ if args.rotcount:
 
 # finally start the client!
 client = discord.Client(
-    max_messages=20000, activity=discord.Game(name="%i ROT13's, dood!" % stats.get_rot_count() )
+    max_messages=20000, activity=discord.Game(name="%i ROT13's, dood!" % stats.get_rot_count() ))
 
 # # # # # #
 # Methods #
