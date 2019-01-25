@@ -31,6 +31,8 @@ rot_encoder = RotEncoder()
 stats = Stats()
 translator = GoogleTranslate()
 
+default_status_message = "PM me $help."
+
 # debug mode from command flag
 if args.debug == True:
     debug = True
@@ -46,7 +48,7 @@ if args.rotcount:
 
 # finally start the client!
 client = discord.Client(
-    max_messages=20000, activity=discord.Game(name="PM me $help. %i ROT13 and counting!" % stats.get_rot_count()))
+    max_messages=20000, activity=discord.Game(name="%i ROT13's, dood!" % stats.get_rot_count() )
 
 # # # # # #
 # Methods #
@@ -56,9 +58,9 @@ client = discord.Client(
 async def increment_rot(client):
     stats.increment_rot()
     if stats.get_rot_count() == 1:
-        await client.change_presence(activity=discord.Game(name="PM me $help. %i ROT13 and counting!" % stats.get_rot_count()))
+        await client.change_presence(activity=discord.Game(name="%i ROT13, dood!" % stats.get_rot_count()) )
     else:
-        await client.change_presence(activity=discord.Game(name="PM me $help. %i ROT13's and counting!" % stats.get_rot_count()))
+        await client.change_presence(activity=discord.Game(name="%i ROT13's, dood!" % stats.get_rot_count() ))
 
 # encode and send a rot13-encoded message (using an imbed)
 async def encode_and_send_pm(message, client):
